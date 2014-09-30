@@ -3,7 +3,9 @@ body {
 }
 
 .main {
-  background-color: white;
+	background-image: url('../images/background2.gif');
+	background-repeat: no-repeat;
+	background-size: 100% 500px;
   margin-top: 110px;
   min-width: 1200px;
   padding-left: 100px;
@@ -52,4 +54,32 @@ body {
 
 .ryu-cool {
 	background-image: url('../images/ryu-cool.gif');
+}
+
+.instructions, .controls {
+	background-color:rgba(255,255,255,0.75);
+	float: right;
+}
+
+.instructions > h1, .controls > h1 {
+	font-size: 125%;
+	font-weight: bold;
+	padding-bottom: 5px;
+}
+
+.instructions > h1, .instructions > p, .controls > h1, .controls > p {
+	color: rgb(125,78,64);
+}
+
+.instructions-container {
+	position: relative;
+	float: right;
+	width: 20%;
+}
+.controls, .instructions {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
+	padding: 5%;
 }
